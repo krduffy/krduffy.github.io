@@ -13,15 +13,29 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  padding: 10px;
   height: 100vh;
+  min-height: 100%;
   width: 100vw;
-  overflow: hidden;
+  overflow-y: scroll;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.nav-menu {
+  height: 50px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  flex: none;
+}
+
+.main-page-content {
+  position: relative;
+  flex: 1;
 }

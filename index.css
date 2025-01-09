@@ -1,0 +1,61 @@
+#self-intro-area {
+  width: 100%;
+  padding: 10px;
+}
+
+#contact-menu-area {
+  width: 100%;
+  background-color: var(--background-color);
+  position: absolute;
+  bottom: 0;
+}
+
+.contact-menu {
+  height: 100%;
+  min-width: 40px;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-menu-icon {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* none of these are actually buttons; they are anchors because i want 
+   the link to appear in the bottom left */
+
+.contact-menu-button {
+  padding: 6px;
+  opacity: 100%;
+  transition: opacity 0.5s;
+  color: inherit;
+  border-radius: 10%;
+  border: 1px solid white;
+}
+
+.contact-menu-button:hover {
+  opacity: 50%;
+}
+
+#github-button {
+  background-color: black;
+  color: white;
+}
+
+#linkedin-button {
+  background-color: lightskyblue;
+}
+
+#mailto-button {
+  background-color: lightblue;
+}

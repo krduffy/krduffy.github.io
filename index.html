@@ -3,32 +3,36 @@
   <head>
     <title>krduffy</title>
     <link href="global.css" rel="stylesheet" />
-    <link href="index-style.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="index-animations.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Contact menu -->
-    <div>
-      <!-- NAV -->
-      <nav>
-        <a href="projects.html">Projects</a>
-      </nav>
+    <nav class="nav-menu">
+      <a href="projects.html">Projects</a>
+    </nav>
 
+    <div class="main-page-content">
       <!-- SELF INTRO AREA -->
-      <div>
-        <h1>Hi, I'm Kieran</h1>
-        <p>~~~Intro</p>
-        <p>
+      <div id="self-intro-area">
+        <h1 id="self-intro-header">Hi, I'm Kieran</h1>
+        <p id="self-intro-about-me">Write this in later</p>
+        <p id="self-intro-about-projects">
           Most of the projects I work on relate to my Korean dictionary. You can
           learn about them <a href="projects.html">here</a>.
         </p>
       </div>
 
       <!-- CONTACT MENU -->
-      <div>
+      <div id="contact-menu-area">
         <h4>My links</h4>
         <menu class="contact-menu">
           <!-- Github -->
-          <button id="github-button">
+          <a
+            target="_blank"
+            id="github-button"
+            class="contact-menu-button"
+            href="https://github.com/krduffy"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -39,9 +43,14 @@
               />
               <path d="M9 18c-4.51 2-5-2-7-2" />
             </svg>
-          </button>
+          </a>
           <!-- Linkedin -->
-          <button id="linkedin-button">
+          <a
+            target="_blank"
+            id="linkedin-button"
+            class="contact-menu-button"
+            href="https://www.linkedin.com/in/kieran-duffy-b9a445228/"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -53,9 +62,15 @@
               <rect width="4" height="12" x="2" y="9" />
               <circle cx="4" cy="4" r="2" />
             </svg>
-          </button>
+          </a>
           <!-- Mailto -->
-          <button id="mailto-button">
+          <!-- FILL IN THE HREF FOR MAIL -->
+          <a
+            target="_blank"
+            id="mailto-button"
+            class="contact-menu-button"
+            href="mailto:!!!!!!fillinlater"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -64,7 +79,7 @@
               <rect width="20" height="16" x="2" y="4" rx="2" />
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
             </svg>
-          </button>
+          </a>
         </menu>
       </div>
     </div>

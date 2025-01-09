@@ -1,0 +1,29 @@
+@keyframes come-in-from-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0%;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+}
+
+#self-intro-header,
+#self-intro-about-me,
+#self-intro-about-projects {
+  animation: come-in-from-left 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+#self-intro-header {
+  animation-delay: 0s;
+}
+
+#self-intro-about-me {
+  animation-delay: 1s;
+}
+
+#self-intro-about-projects {
+  animation-delay: 2s;
+}
