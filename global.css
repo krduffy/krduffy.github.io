@@ -3,6 +3,13 @@
   --text-color: black;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1d1d1d;
+    --text-color: white;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -10,6 +17,7 @@
 
 body {
   background-color: var(--background-color);
+  color: var(--text-color);
   padding: 10px;
   height: 100vh;
   width: 100vw;

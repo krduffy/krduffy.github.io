@@ -1,14 +1,15 @@
-.contact-menu-sidebar {
+.contact-menu {
   height: 100%;
   min-width: 40px;
   padding: 4px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.contact-menu-sidebar-icon {
+.contact-menu-icon {
+  cursor: pointer;
   width: 24px;
   height: 24px;
   fill: none;
