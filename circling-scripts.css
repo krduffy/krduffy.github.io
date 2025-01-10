@@ -12,6 +12,12 @@
   position: relative;
 
   --revolution-time: 15s;
+
+  /* opacity 0 -> comes in after self intro text */
+  opacity: 0;
+  animation: appear-after-text 1s linear forwards;
+  /* the self intro text sections come in after 0, 1, and 2s */
+  animation-delay: 3s;
 }
 
 .circling-script-character {
@@ -63,5 +69,14 @@
   to {
     transform: rotate(360deg) translateY(calc(var(--track-side-length) / 2))
       rotate(-360deg);
+  }
+}
+
+@keyframes appear-after-text {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
   }
 }
