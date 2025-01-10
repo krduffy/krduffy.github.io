@@ -1,11 +1,14 @@
 :root {
+  font-family: Menlo, Consolas, Monaco, monospace;
   --background-color: white;
+  --secondary-background-color: white;
   --text-color: black;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #1d1d1d;
+    --secondary-background-color: white;
     --text-color: white;
   }
 }

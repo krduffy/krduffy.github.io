@@ -1,6 +1,19 @@
 #self-intro-area {
   width: 100%;
   padding: 10px;
+  text-align: center;
+}
+
+#self-intro-header {
+  padding-bottom: 40px;
+}
+
+#self-intro-about-me {
+  padding-bottom: 20px;
+}
+
+#self-intro-about-projects {
+  padding-bottom: 20px;
 }
 
 #contact-menu-area {
