@@ -44,5 +44,9 @@
   text-decoration: underline;
 }
 
+.project-detail-link {
+  color: inherit;
+}
+
 .project-description {
 }
