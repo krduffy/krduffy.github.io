@@ -1,14 +1,14 @@
 :root {
   font-family: Menlo, Consolas, Monaco, monospace;
   --background-color: white;
-  --secondary-background-color: white;
+  --secondary-background-color: #333333;
   --text-color: black;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #1d1d1d;
-    --secondary-background-color: white;
+    --secondary-background-color: #131313;
     --text-color: white;
   }
 }
@@ -36,9 +36,78 @@ body {
   position: sticky;
   top: 0;
   flex: none;
+  background-color: var(--secondary-background-color);
+}
+
+.nav-menu > a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .main-page-content {
   position: relative;
   flex: 1;
+}
+
+#contact-menu-area {
+  padding: 16px;
+  width: 100%;
+  background-color: var(--secondary-background-color);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.contact-menu {
+  height: 100%;
+  padding: 4px;
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-menu-icon {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* none of these are actually buttons; they are anchors because i want 
+   the link to appear in the bottom left */
+
+.contact-menu-button {
+  padding: 6px;
+  opacity: 100%;
+  transition: opacity 0.5s;
+  color: inherit;
+  border-radius: 10%;
+  border: 1px solid white;
+}
+
+.contact-menu-button:hover {
+  opacity: 50%;
+}
+
+#github-button {
+  background-color: black;
+  color: white;
+}
+
+#linkedin-button {
+  background-color: lightskyblue;
+}
+
+#mailto-button {
+  background-color: lightblue;
 }

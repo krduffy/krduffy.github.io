@@ -1,0 +1,67 @@
+.circling-scripts-track {
+  --track-side-length: 250px;
+
+  width: var(--track-side-length);
+  height: var(--track-side-length);
+  border: 2px dashed;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  --revolution-time: 15s;
+}
+
+.circling-script-character {
+  position: absolute;
+  font-size: 48px;
+  text-decoration: none;
+
+  left: translate(calc(50% - 24px));
+
+  animation: circle-around-track linear infinite;
+  animation-duration: var(--revolution-time);
+
+  cursor: help;
+}
+
+#roman-character {
+  color: #e63946;
+  animation-delay: calc(-1 * var(--revolution-time) / 3);
+}
+
+#hangul-character {
+  color: #457b9d;
+  animation-delay: calc(-2 * var(--revolution-time) / 3);
+}
+
+#hanja-character {
+  color: #2a9d8f;
+}
+
+@media (prefers-color-scheme: dark) {
+  #roman-character {
+    color: #ff6b6b;
+  }
+
+  #hangul-character {
+    color: #4d96ff;
+  }
+
+  #hanja-character {
+    color: #52d681;
+  }
+}
+
+@keyframes circle-around-track {
+  from {
+    transform: rotate(0deg) translateY(calc(var(--track-side-length) / 2))
+      rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateY(calc(var(--track-side-length) / 2))
+      rotate(-360deg);
+  }
+}
