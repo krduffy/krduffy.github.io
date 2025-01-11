@@ -3,7 +3,6 @@
 
   width: var(--track-side-length);
   height: var(--track-side-length);
-  border: 2px dashed;
   border-radius: 50%;
   display: flex;
   align-items: center;

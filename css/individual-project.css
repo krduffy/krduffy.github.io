@@ -11,6 +11,7 @@
   flex-direction: row;
   gap: 16px;
   padding-bottom: 32px;
+  justify-content: center;
 }
 
 .preface-notes-area > ul > li {
@@ -24,7 +25,7 @@
 }
 
 .preface-notes-area > ul {
-  opacity: 70%;
+  opacity: 90%;
   list-style: none;
 }
 
@@ -95,6 +96,13 @@
   background-color: #dddddd;
 }
 
+.technologies-used-list > li {
+  display: table-cell;
+
+  border-right: 2px #676767 solid;
+  border-left: 2px #676767 solid;
+}
+
 @media (prefers-color-scheme: dark) {
   .technologies-used-list {
     --inner-list-header-color: #3464eb;
@@ -102,16 +110,8 @@
     border-color: white;
   }
   .technologies-used-list > li {
-    border-left-color: white;
-    border-right-color: white;
+    border-color: white;
   }
-}
-
-.technologies-used-list > li {
-  display: table-cell;
-
-  border-right: 2px #676767 solid;
-  border-left: 2px #676767 solid;
 }
 
 @media screen and (max-width: 1000px) {

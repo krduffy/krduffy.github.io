@@ -1,7 +1,7 @@
 :root {
   font-family: Menlo, Consolas, Monaco, monospace;
   --background-color: white;
-  --secondary-background-color: #333333;
+  --secondary-background-color: #bbbbbb;
   --text-color: black;
 }
 
@@ -10,6 +10,9 @@
     --background-color: #1d1d1d;
     --secondary-background-color: #131313;
     --text-color: white;
+  }
+  a {
+    color: #6ac4e6;
   }
   a:visited {
     color: #9f63f2;
@@ -50,13 +53,13 @@ body {
 }
 
 .nav-menu-link {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   transition: opacity 0.5s;
 }
 
 .nav-menu-link:visited {
-  color: white;
+  color: var(--text-color);
 }
 
 .nav-menu-link:hover {
@@ -71,7 +74,7 @@ body {
 }
 
 #contact-menu-area {
-  color: white;
+  color: var(--text-color);
   margin-top: 12px;
   padding: 16px;
   width: 100%;

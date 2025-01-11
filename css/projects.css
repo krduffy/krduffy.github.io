@@ -11,6 +11,7 @@
 }
 
 .listed-project {
+  color: white;
   margin-top: 16px;
   margin-bottom: 16px;
   list-style: none;
@@ -29,6 +30,9 @@
 
 .project-visual-content {
   padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-github-icon {
@@ -46,7 +50,4 @@
 
 .project-detail-link {
   color: inherit;
-}
-
-.project-description {
 }
