@@ -91,7 +91,7 @@
 
   border-collapse: collapse;
 
-  border: 2px black solid;
+  border: 2px #676767 solid;
 
   --inner-list-header-color: #a5b6cf;
 
@@ -113,8 +113,8 @@
 .technologies-used-list > li {
   display: table-cell;
 
-  border-right: 2px black solid;
-  border-left: 2px black solid;
+  border-right: 2px #676767 solid;
+  border-left: 2px #676767 solid;
 }
 
 @media screen and (max-width: 1000px) {

@@ -132,6 +132,10 @@ body {
   color: inherit;
 }
 
+.anchored-icon:visited {
+  color: inherit;
+}
+
 .anchored-icon:hover {
   opacity: 50%;
 }

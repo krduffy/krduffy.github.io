@@ -15,9 +15,8 @@
 
   /* opacity 0 -> comes in after self intro text */
   opacity: 0;
-  animation: appear-after-text 1s linear forwards;
   /* the self intro text sections come in after 0, 1, and 2s */
-  animation-delay: 3s;
+  animation: appear-after-text 3s linear forwards;
 }
 
 .circling-script-character {
