@@ -62,6 +62,7 @@
   padding-bottom: 24px;
   justify-content: space-around;
   gap: 24px;
+  align-items: center;
 }
 
 .technologies-used-section {
@@ -70,7 +71,6 @@
 }
 
 .project-details > p {
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -103,23 +103,31 @@
 
 .technologies-used-list > li {
   display: table-cell;
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
 
   border-right: 2px white solid;
   border-left: 2px white solid;
 }
 
+@media screen and (max-width: 1000px) {
+  .technologies-and-summary-inner-wrapper {
+    flex-direction: column;
+  }
+}
+
 .used-technology-type-header {
-  padding-bottom: 4px;
+  padding: 4px;
   background-color: var(--inner-list-header-color);
   text-align: center;
+  white-space: nowrap;
 }
 
 .used-technology-type-list {
   list-style: none;
   padding: 10px;
+}
+
+.used-technology-type-list > li {
+  white-space: nowrap;
 }
 
 .glossary-word {

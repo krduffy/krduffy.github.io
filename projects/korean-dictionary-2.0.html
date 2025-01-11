@@ -83,13 +83,13 @@
             <h3 class="section-header">1. Summary</h3>
             <div class="technologies-and-summary-inner-wrapper">
               <summary class="project-summary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Most of the original dictionary's functionality, but better.
+                Compared to the original, the UI is better and the design is
+                more responsive. There are also more options for the user to
+                customize their experience, and planned features include an
+                overhaul to the way users are able to customize words'
+                dictionary entries and a more comprehensive review system to
+                further improve user experience.
               </summary>
               <div class="technologies-used-section-wrapper">
                 <section class="technologies-used-section">
@@ -139,7 +139,51 @@
           </section>
 
           <section class="project-details">
-            <h3 class="section-header">2. Inspiration</h3>
+            <h3 class="section-header">2. Inspiration and Concept</h3>
+            <p>
+              <span
+                class="glossary-word"
+                title="De facto standard online Korean dictionary."
+                >Naver Dictionary</span
+              >
+              used to have a feature where you would search for a word and they
+              would search for instances of that word within show transcripts or
+              closed captions in their database. While this was in theory a good
+              idea, the examples never had sufficient context to make sense.
+            </p>
+            <p>
+              In my original Korean dictionary, users can add example sentences
+              for any word. This is useful, but it requires both a lot of time
+              and conscious awareness that you're seeing an unfamiliar word.
+              Words you do not take notice of fly under the radar.
+            </p>
+            <p>
+              If you could instead let the computer add the examples for you, it
+              would add (in theory) ALL of the examples, even for these
+              under-the-radar words. If you ever do take notice of them, you'll
+              have already collected a set of contextual examples for the word.
+              And since you were the one who added those examples, they will
+              make a whole lot more sense.
+            </p>
+            <p>
+              Generally expanding user options and user experience has been the
+              goal of this second dictionary. It has improved UI and improved
+              settings and customizability. I also rewrote the entire project in
+              Typescript to make the project more maintainable into the future.
+            </p>
+            <p>
+              I am currently working on the auto-derived examples system for the
+              project. This has involved creating a tool that picks the correct
+              <span
+                class="glossary-word"
+                title="A grouping of similar meanings in a dictionary entry that all correspond to the same word."
+                >headword</span
+              >
+              out of a list (see
+              <a href="/projects/headword-disambiguator.html"
+                >projects/headword-disambiguator</a
+              >).
+            </p>
           </section>
         </article>
       </div>
