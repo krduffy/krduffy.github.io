@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/css/global.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="nav-menu">
@@ -12,7 +13,115 @@
     </nav>
 
     <div class="main-page-content">
-      <div class="main-page-content-top"></div>
+      <div class="main-page-content-top">
+        <article class="project-article">
+          <h1 class="project-title">Korean Dictionary</h1>
+          <section class="technologies-used-section">
+            <h4 class="technologies-used-header">Technologies used</h4>
+            <ul class="technologies-used-list">
+              <li>
+                <h6 class="used-technology-type-header">Frontend</h6>
+                <ul class="used-technology-type-list">
+                  <li>React (Javascript)</li>
+                  <li>CSS</li>
+                </ul>
+              </li>
+              <li>
+                <h6 class="used-technology-type-header">Backend</h6>
+                <ul class="used-technology-type-list">
+                  <li>Python</li>
+                  <li>Django</li>
+                  <li>Django Rest Framework</li>
+                  <li>Postgres</li>
+                </ul>
+              </li>
+              <li>
+                <h6 class="used-technology-type-header">
+                  NLP
+                  <footer>
+                    Needed for auto-searching functionality when a word is
+                    clicked on
+                  </footer>
+                </h6>
+                <ul class="used-technology-type-list">
+                  <li>KoNLPy (NLP package for Korean language)</li>
+                  <li>
+                    KKMA (Part of speech tagger from Seoul National University)
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <summary class="project-summary"></summary>
+
+          <section class="project-details">
+            <h3>Inspiration</h3>
+            <p>
+              I have been studying Korean for seven years. After a while, I had
+              found a number of resources I liked. However, at a point the
+              number of separate resources I was using became burdensome.
+            </p>
+            <p>
+              Initially, I only used a basic online dictionary. Later, I grew
+              interested in <span class="glossary-word" title="">Hanja</span>
+              characters and wanted to study them. Unfortunately, the online
+              dictionary's Hanja dictionary is less than ideal, as its example
+              words are not listed in order of usage or relevance.
+            </p>
+            <p>
+              To get a resource with a better order, I instead had a separate
+              app installed. However, this app did not have a desktop or web
+              version, so now I had different resource accessibility on
+              different devices.
+            </p>
+            <p>
+              I later began using Anki, a flashcard program, to systematically
+              reencounter the same words in the same context repeatedly. Making
+              Anki flashcards was tedious, as I had to copy and paste
+              information both the online dictionary and the Hanja app for
+              almost every card. The flashcard's information also only existed
+              in Anki, so if I ever looked at the online dictionary entry again
+              for the word, none of my work would be there.
+            </p>
+            <p>
+              I was using the online dictionary and the Hanja app because I
+              liked the default wealth of information they provided. But with
+              Anki, I liked the ability to make my own cards, with sentences and
+              contexts
+              <b>I</b> personally found and experienced.
+            </p>
+            <p>
+              NEED TO IMPROVE THIS PART Later, I got a paper French dictionary.
+              In the age of technology, a paper dictionary felt impractical. But
+              when I looked inside I realized it was exactly what I was looking
+              for. The previous owner left examples of a word they had seen for
+              themselves in the margins of each line; the original page was just
+              a default setting. They could add whatever they wanted.
+            </p>
+            <p>
+              Recreating this experience is the major premise of this Korean
+              dictionary. Rather than copy and pasting to Anki, you can add
+              notes, pictures, and example sentences directly into the entry for
+              any word. You can mark words as 'known' and the dictionary will
+              specifically prioritize those words when ordering Hanja words. And
+              most importantly, there are no separate flashcards. Here, the
+              entire dictionary is now the set of flashcards, and choosing to
+              study any word just involves adding the dictionary entry into your
+              study list.
+            </p>
+            <p>
+              This is all also user specific, so it is like every user has their
+              own "copy" they can personally edit.
+            </p>
+            <p>
+              The dictionary also includes standard dictionary features like
+              being able to click on any word to search for its meaning. For a
+              complete list of features, view the repository(linkto) for the
+              dictionary.
+            </p>
+          </section>
+        </article>
+      </div>
 
       <!-- CONTACT MENU -->
       <div id="contact-menu-area">
