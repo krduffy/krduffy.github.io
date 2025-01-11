@@ -77,13 +77,27 @@
             <h3 class="section-header">1. Summary</h3>
             <div class="technologies-and-summary-inner-wrapper">
               <summary class="project-summary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                I made this as a requirement for my
+                <a href="/projects/korean-dictionary-2.0.html"
+                  >second Korean dictionary</a
+                >. The goal is to be able to determine which of a
+                <span
+                  class="glossary-word"
+                  title="The dictionary form of a word, as opposed to an inflected form. For example, 'running' is an inflection of the lemma 'run'."
+                  >lemma</span
+                >'s
+                <span
+                  class="glossary-word"
+                  title="A grouping of similar meanings in a dictionary entry that all correspond to the same word."
+                  >headwords</span
+                >
+                is being used in a specific context. For example, if given the
+                sentence 'The pen has no ink left', I need to be able to
+                determine whether the word 'pen' in this sentence refers to a
+                writing utensil <i>pen</i> or a fenced area in which livestock
+                are kept <i>pen</i>. After testing various methods of picking a
+                headword, I found a model that has accuracy suitable for the
+                purposes of the new Korean dictionary.
               </summary>
               <div class="technologies-used-section-wrapper">
                 <section class="technologies-used-section">
@@ -166,6 +180,57 @@
 
           <section class="project-details">
             <h3 class="section-header">2. Inspiration</h3>
+            <p>
+              A major goal of the second Korean dictionary is to implement the
+              ability to automatically derive example sentences from any text.
+            </p>
+            <p>
+              For greater precision when showing these examples, the
+              implementation of this feature should also attempt to figure out
+              the meaning of the words in an example sentence. This way, it can
+              only show the example for the correct headwords rather than
+              <i>all</i> of the headwords corresponding to a lemma.
+            </p>
+            <p>
+              To reuse the example from the <b>Summary</b> section, assume a
+              user inputs the text 'The pen has no ink left'. The system should
+              automatically detect the lemma 'pen' in this sentence and place
+              the sentence in the correct dictionary entry. It should appear
+              under the headword refering to the writing utensil, but
+              <strong>not</strong>
+              under the headword refering to an animal enclosure.
+            </p>
+            <p>
+              <span
+                class="glossary-word"
+                title="In Korean, most lemmas have one headword that dominates usage. The only types of lemma I would categorically describe as likely to have more than one common headword would be two syllable words of Chinese origin or single syllable words of native Korean origin. As a result, most of the words I test in this project fall into one of those two categories."
+                >For many lemmas, only one headword is frequently used.</span
+              >
+              In these cases, it is prudent to simply pick the common headword.
+              However, cases like <i>pen</i> above are numerous. For this
+              project, not making any decision (saying 'not sure') when no
+              headword seems especially likely to be correct is fine.
+            </p>
+            <p>
+              However, there needs to be a balance between making decisions
+              often enough to fulfill its role as a useful component of the
+              dictionary and between being accurate in its guesses.
+            </p>
+            <p>
+              This project involved finding a way to use a model like KoBERT to
+              find this balance. Using KoBERT and
+              <span
+                class="glossary-word"
+                title="The parameters that were tested and finetuned can be found in the Github repository README"
+                >various parameters</span
+              >, I can return a response around 45% of the time with around 90%
+              accuracy for ambiguous usages of the tested lemmas. Longer texts
+              generally net better results.
+            </p>
+            <p>
+              For unambiguous lemmas, the model will readily default to the
+              common headword as intended.
+            </p>
           </section>
         </article>
       </div>

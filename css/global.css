@@ -11,6 +11,9 @@
     --secondary-background-color: #131313;
     --text-color: white;
   }
+  a:visited {
+    color: #9f63f2;
+  }
 }
 
 * {
@@ -26,6 +29,7 @@ body {
   min-height: 100%;
   width: 100vw;
   overflow-y: scroll;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -46,9 +50,13 @@ body {
 }
 
 .nav-menu-link {
-  color: inherit;
+  color: white;
   text-decoration: none;
   transition: opacity 0.5s;
+}
+
+.nav-menu-link:visited {
+  color: white;
 }
 
 .nav-menu-link:hover {
@@ -63,6 +71,7 @@ body {
 }
 
 #contact-menu-area {
+  color: white;
   margin-top: 12px;
   padding: 16px;
   width: 100%;

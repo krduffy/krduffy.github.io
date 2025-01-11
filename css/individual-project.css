@@ -16,6 +16,10 @@
   padding-bottom: 32px;
 }
 
+.preface-notes-area > ul > li {
+  padding-bottom: 12px;
+}
+
 .preface-notes-icon-wrapper {
   display: flex;
   align-items: center;
@@ -87,25 +91,30 @@
 
   border-collapse: collapse;
 
-  border: 2px white solid;
+  border: 2px black solid;
 
-  --inner-list-header-color: red;
+  --inner-list-header-color: #a5b6cf;
 
-  background-color: blue;
+  background-color: #dddddd;
 }
 
 @media (prefers-color-scheme: dark) {
   .technologies-used-list {
     --inner-list-header-color: #3464eb;
     background-color: #292929;
+    border-color: white;
+  }
+  .technologies-used-list > li {
+    border-left-color: white;
+    border-right-color: white;
   }
 }
 
 .technologies-used-list > li {
   display: table-cell;
 
-  border-right: 2px white solid;
-  border-left: 2px white solid;
+  border-right: 2px black solid;
+  border-left: 2px black solid;
 }
 
 @media screen and (max-width: 1000px) {
