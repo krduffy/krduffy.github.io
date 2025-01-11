@@ -100,15 +100,8 @@ body {
 
 .contact-menu-button {
   padding: 6px;
-  opacity: 100%;
-  transition: opacity 0.5s;
-  color: inherit;
   border-radius: 10%;
   border: 1px solid white;
-}
-
-.contact-menu-button:hover {
-  opacity: 50%;
 }
 
 #github-button {
@@ -122,4 +115,14 @@ body {
 
 #mailto-button {
   background-color: lightblue;
+}
+
+.anchored-icon {
+  opacity: 100%;
+  transition: opacity 0.5s;
+  color: inherit;
+}
+
+.anchored-icon:hover {
+  opacity: 50%;
 }
