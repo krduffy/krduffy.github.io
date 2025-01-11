@@ -116,17 +116,22 @@ body {
   border: 1px solid white;
 }
 
-#github-button {
-  background-color: black;
+#github-button,
+#linkedin-button,
+#mailto-button {
   color: white;
 }
 
+#github-button {
+  background-color: black;
+}
+
 #linkedin-button {
-  background-color: lightskyblue;
+  background-color: #6a8be6;
 }
 
 #mailto-button {
-  background-color: lightblue;
+  background-color: #6aaae6;
 }
 
 .anchored-icon {

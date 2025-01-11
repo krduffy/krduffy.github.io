@@ -11,7 +11,7 @@
   flex-direction: row;
   gap: 16px;
   padding-bottom: 32px;
-  justify-content: center;
+  align-items: center;
 }
 
 .preface-notes-area > ul > li {
